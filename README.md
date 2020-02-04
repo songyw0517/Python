@@ -42,3 +42,28 @@ print(a-b)
 
 # 리스트 초기화
 arr = [0 for i in range(41)] //하면 arr리스트에 0이 41개가 들어간다!!
+
+# 문제해설
+```python
+test=int(input('')) # test 개수 입력
+item=[] # 아이템 리스트
+fibo=[1,1] # 피보나치 수열 리스트
+for i in range(test): # 아이템을 입력받는다.
+    item.append(int(input('')))
+    
+for i in range(2, max(item)): # 아이템 중 가장 큰 값까지 피보나치수열을 계산하여 저장한다.
+    fibo.append(fibo[i-1]+fibo[i-2])
+    
+while item != []: # 아이템리스트가 빈 리스트가될때까지(아이템이 없어질때까지) 반복
+    value = item.pop(0) # 아이템리스트의 첫번째 값을 받아온다.(리스트에서 없애면서)
+    if value==0:
+        print('1 0')
+    elif value==1:
+        print('0 1')
+    else:
+        print(fibo[value-2], fibo[value-1])
+```
+# 배운 함수
+리스트.append(값) : 리스트 맨 뒤에 값을 추가한다
+리스트.pop() : 리스트 맨 뒤의 값을 없애면서 반환
+리스트.pop(0) : 리스트 맨 앞의 값을 없애면서 반환
