@@ -1,0 +1,13 @@
+내장?함수
+max
+min
+sum
+
+리스트
+.append
+.pop
+.count
+
+문자열
+.split
+.format

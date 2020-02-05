@@ -1,5 +1,4 @@
-nomean=input('')
-test = input('').split(' ')
-test = int(test)
-print(test)
-print(min(test), max(test))
+N=int(input())
+A=list(map(int,input().split()))
+
+print("{} {}".format(min(A), max(A)))
