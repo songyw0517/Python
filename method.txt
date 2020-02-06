@@ -1,7 +1,8 @@
-내장?함수
+﻿내장?함수
 max
 min
 sum
+round
 
 리스트
 .append
@@ -11,3 +12,5 @@ sum
 문자열
 .split
 .format
+
+서식문자 % : '%.3f' % round(n/A[0] * 100, 3)
