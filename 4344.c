@@ -22,8 +22,6 @@ int main()
 			if(arr[k]>avg)
 				up++;
 		}
-		printf("up = %d\n", up);
-		printf("n = %d\n", n);
 		avg=(double)up*100/n;
 		printf("%.3lf%%\n", avg);
 		free(arr);

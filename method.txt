@@ -14,3 +14,4 @@ round
 .format
 
 서식문자 % : '%.3f' % round(n/A[0] * 100, 3)
+print('%d %d' %(3,3))-> 3 3 출력
