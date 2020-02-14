@@ -87,3 +87,40 @@ c언어에서는 1 2 3 4 5 의 문자열로 입력을 해도 배열에 잘 들�
 A=list(map(int,input().split())) #A에 여러개의 변수가 입력된 리스트를 저장
 print("{} {}".format(min(A), max(A)))
 ```
+# 15596
+=======
+새로운 함수의 형태를 본 문제이다.
+```python
+def solve(a: list) -> int:
+    return sum(a)
+```
+a라는 매개변수가 list형이라는 것, 함수 반환값의 형이 int형이라는 것을 알려주는 함수이다.<br>
+그 동안 def solve(a): 만 알고있었기에 반환형이 nonetype형이어서 활용하는것이 힘들었지만 이것으로 만족..
+
+<hr>
+# 함수정리
+pow(2,3) -> 2의3승
+abs
+len
+max
+min
+sum
+round(3,141592, 2) -> 소수 둘째짜리까지 반올림
+map : 반복가능한 객체 요소를 지정한 함수 실행 후 추출
+zip : 리스트와 리스트를 묶어주는? 함수
+
+리스트, 문자열
+.append
+.sort
+.index
+.pop
+.count
+.upper
+.lower
+.strip([문자열]) // 문자열 or 공백 지우기
+.split
+.format
+.count
+
+서식문자 % : '%.3f' % round(n/A[0] * 100, 3)
+print('%d %d' %(3,3))-> 3 3 출력
