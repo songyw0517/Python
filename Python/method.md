@@ -1,3 +1,50 @@
+# 문자열 함수 (String.함수 형식)
+- split('기준 문자') : 문자열을 '기준 문자'를 기준으로 나누어 리스트로 반환
+ex) list = input("문자 입력").split() : 공백을 기준으로 문자열을 나누어 리스트로 반환
+
+
+# 입력
+num = input()
+num = int(input())
+num, num2 = input().split()
+cf) num1, num2 = int(input().split()) 는 오류가 발생한다. 
+-> map 함수를 사용하면 된다. : num1, num2 = map(int, input().split())
+
+# map 함수
+- 여러개의 데이터에 대하여 같은 연산을 한번에 진행시키는 함수
+- map(연산함수, 순회 가능한 데이터)의 형식을 가진다.
+ex) num1, num2 = map(int, input().split())
+-> input으로 받은 문자열을 공백으로 분할한 리스트에 int형을 지정한다.
+++ split()함수를 수행하면 리스트로 반환한다.
+
+
+# lambda
+- 런타임에서 생성하여 사용할 수 있는 익명함수
+- lambda '매개변수' : 식
+- 매개변수를 식에 대입하여 결과를 반환한다.
+ex) lambda u : u * 10
+-> 매개변수 u를 받아서 * 10의 연산 값을 반환한다.
+
+# filter
+- 여러개의 데이터에서 일부의 데이터만 추출함
+- filter(조건 식, 순회 가능한 데이터)
+- 조건 식에는 함수가 들어갈 수 있다. (def로 지정함 함수 또는 lambda 함수)
+- 반환 값은 <class 'filter'>이다.
+<code>
+t = [1,2,3,4,5,6]
+a = list(filter(lambda x:x>3, t))
+print(a)
+
+
+
+</code>
+# in
+# range
+#
+
+
+
+
 # curious
 -> 0 for i in range(41)
 -> find, rfind
