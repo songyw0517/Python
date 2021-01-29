@@ -63,3 +63,19 @@ print(next(a))
 print(next(a))
 print(next(a))
 print(list(a))
+
+
+print("="*30)
+ListA = [1,2,3]
+tempList = ListA.copy()
+tempList.clear()
+print(ListA)
+
+print("="*30)
+fruits = ['apple', 'banana', 'cherry']
+x = fruits.pop(1)
+print(x) # 'banana'
+print(fruits) # ['apple', 'cherry']
+x = fruits.pop()
+print(x) # 'cherry'
+print(fruits) # ['apple']

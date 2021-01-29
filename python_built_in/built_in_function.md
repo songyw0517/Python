@@ -393,7 +393,7 @@ import과정을 필요로 하지 않는 파이썬 내부의 함수들을 말한�
 |:---:|:---:|:---:|:---:|:---:|
 | delattr() | setattr() | hasattr() | getattr() | issubclass() |
 | classmethod() | super() | staticmethod() |
-- delattr() 
+- delattr(object, name)
 - setattr() 
 - hasattr() 
 - getattr() 
@@ -462,7 +462,5 @@ print(
 )
 ```
 결과는 모두 다른 타입을 보여주었다.
-
-
  <class 'bool'> <class 'str'> <class 'int'> <class 'float'> <class 'complex'> <class 'list'> <class 'tuple'> <class 'dict'> <class 'set'> <class 'frozenset'> <class 'object'> <class 'bytes'> <class 'bytearray'> <class 'memoryview'> <class 'range'> <class 'property'> <class 'slice'>
 
